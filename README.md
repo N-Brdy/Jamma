@@ -11,6 +11,7 @@ Voici l'organisation des fichiers pour suivre le projet pas à pas :
 *   [specs_materiel.md](specs_materiel.md) : Fiche technique de la borne (type de Hantarex, câblage JAMMA ou autre, adaptateurs vidéo).
 *   [configuration_logiciel.md](configuration_logiciel.md) : Commandes utiles, configuration du signal 15kHz du RPi5, émulateurs.
 *   [liste_achats.md](liste_achats.md) : Liste du matériel nécessaire avec suivi du budget et des commandes.
+*   [liste_jeux.md](liste_jeux.md) : Liste des jeux sélectionnés à installer et configurer.
 
 ---
 

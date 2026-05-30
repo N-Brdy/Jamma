@@ -36,6 +36,7 @@ Ce fichier regroupe toutes les tâches nécessaires à la réalisation de ta bor
 - [ ] Brancher les joysticks et les 3-4 premiers boutons de chaque joueur sur le peigne JAMMA d'origine (via soudure ou cosses).
 - [ ] Réaliser le câblage complémentaire (Kick Harness) pour les boutons 5 et 6 de chaque joueur, et le relier au connecteur prévu sur le Recalbox RGB JAMMA 2.
 - [ ] Configurer et mapper les boutons dans le menu Recalbox.
+- [ ] Installer et tester la sélection de roms (Double Dragon, Shinobi, Flash, Golden Axe, Fa18, Streetfighter) (voir [liste_jeux.md](liste_jeux.md)).
 - [ ] Tester les boutons dans Street Fighter (vérifier les coups légers, moyens, forts et l'input lag).
 - [ ] Vérifier la sortie audio : ajuster le potentiomètre d'amplification sur la carte Recalbox RGB JAMMA 2.
 
