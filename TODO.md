@@ -6,8 +6,11 @@ Ce fichier regroupe toutes les tâches nécessaires à la réalisation de ta bor
 
 ## 🛡️ Phase 1 : Préparation, Électricité & Sécurité
 - [ ] Inspecter visuellement l'intérieur de la borne (câblage existant, alimentation, peigne JAMMA bleu).
-- [ ] Identifier précisément le modèle de la platine Hantarex (rechercher des étiquettes ou sérigraphies Polo ou MTC 9110).
-- [ ] Inspecter le transformateur d'isolement (Hantarex US250/US300 ou équivalent) pour s'assurer que l'écran sera alimenté avec la bonne tension sans danger.
+- [x] Identifier précisément le modèle de la platine Hantarex (confirmé : **Hantarex Polo 25"** grâce aux photos).
+- [ ] Réparer la télécommande de réglages déportée (PCB OC 03) : remplacer la résistance R403 brûlée (1kΩ ou 1.8kΩ selon la révision), tester la diode D401 (BA159) et remplacer le condensateur C401 (1µF / 100V) préventivement.
+- [ ] Vérifier minutieusement le sens et l'alignement du connecteur de la télécommande (J407) avant toute mise sous tension (un décalage de broches peut causer ce type de court-circuit).
+- [ ] Inspecter le transformateur d'isolement (le gros bloc métallique à gauche de l'alimentation) pour s'assurer que l'écran sera alimenté avec la bonne tension et isolé du secteur.
+- [ ] Dépoussiérer la platine principale du moniteur Polo et sa platine de cou (neck board) après avoir déchargé le tube cathodique en toute sécurité.
 - [ ] Lire la documentation de sécurité pour savoir comment décharger un tube cathodique en toute sécurité (indispensable si tu dois démonter le châssis ou nettoyer en profondeur).
 
 ## 📐 Phase 2 : Conception & Fabrication du Panel sous Fusion 360 (Spécial Street Fighter)

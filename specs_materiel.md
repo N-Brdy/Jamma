@@ -8,11 +8,14 @@ Ce document sert à répertorier tout le matériel physique présent dans la bor
 
 L'écran d'une vraie borne d'arcade est un élément précieux mais délicat.
 
-*   **Marque & Modèle du Tube** : Videocolor 25" (Référence : `A59ECY13X01`)
-*   **Modèle du Châssis (Platine électronique)** : Probablement **Hantarex Polo 25"** ou **Hantarex MTC 9110** (15kHz)
-    *   *Comment identifier le châssis ?* : Regarde la couleur de la carte électronique et les inscriptions (souvent sérigraphiées sur le circuit imprimé ou sur les dissipateurs métalliques en aluminium). Le MTC 9110 possède un ventilateur de refroidissement dédié à côté du transformateur THT.
+*   **Modèle du Châssis (Platine électronique)** : **Hantarex Polo 25"** (15kHz) - *Confirmé par les photos (platine de cou et télécommande OC 03)*.
+    *   *État visuel* : La platine principale et la platine de cou (neck board) sont très poussiéreuses mais semblent physiquement intactes. En revanche, **la télécommande de réglages déportée (PCB OC 03) présente une résistance R403 complètement brûlée/carbonisée** juste sous la diode D401.
+    *   *Composants à vérifier/remplacer sur cette télécommande* :
+        *   **R403** (Résistance) : Complètement brûlée, valeur d'origine de **1kΩ** (ou **1.8kΩ** selon la révision du châssis, à remplacer par une résistance de même valeur, de préférence à couche métallique 0.5W ou 1W).
+        *   **D401** (Diode BA159) : À tester au multimètre, elle est probablement en court-circuit ou a souffert.
+        *   **C401** (Condensateur 1µF / 100V) : À remplacer préventivement (un condensateur fatigué ou en court-circuit dans cette zone peut causer la surchauffe).
 *   **Alimentation du Moniteur** :
-    *   *Attention* : Si c'est un Hantarex MTC 9110, il nécessite **128V AC** (et 220V AC pour la démagnétisation/ventilateur) fournis par un transformateur d'isolement (ex: Hantarex US250/US300). Si c'est un Hantarex Polo 25", il s'alimente généralement directement en **230V AC** (mais nécessite tout de même un transformateur d'isolement interne pour la sécurité et éliminer les boucles de masse). **À vérifier impérativement avant mise sous tension.**
+    *   Le Hantarex Polo 25" nécessite du **230V AC**. Il doit impérativement être alimenté à travers le **transformateur d'isolement** (le gros transformateur lourd métallique visible à gauche de l'alimentation à découpage sur les photos) pour éviter les électrocutions (châssis sous tension) et les boucles de masse.
 *   **Fréquence de balayage** : 15.625 kHz (Standard Arcade).
 
 ---
