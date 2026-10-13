@@ -1,45 +1,40 @@
-# Projet Jamma - Rénovation Borne d'Arcade (Raspberry Pi 5 & Écran CRT Hantarex)
+# Jamma — Rénovation de la borne d'arcade
 
-Bienvenue dans le dépôt de suivi pour la rénovation de ta borne d'arcade ! Ce projet vise à redonner vie à une borne d'époque équipée d'un écran cathodique Hantarex en y intégrant un Raspberry Pi 5.
+Rénovation d'une borne d'arcade d'époque équipée d'un moniteur cathodique
+**Hantarex Polo 25"**, avec un **Raspberry Pi 5** et la carte **Recalbox RGB JAMMA 2**.
 
-## 📁 Structure du Projet
+## Objectif
 
-Voici l'organisation des fichiers pour suivre le projet pas à pas :
+Redonner vie à la borne : retrouver une image **15 kHz** sur l'écran cathodique,
+faire fonctionner les commandes et le son, puis refaire le panel pour jouer
+confortablement à **Street Fighter II**, **Double Dragon**, **Golden Axe**,
+**Shinobi**, **Flash** et **F/A-18 Hornet**.
 
-*   [README.md](README.md) : Vue d'ensemble et guide général (ce fichier).
-*   [TODO.md](TODO.md) : Suivi des tâches classées par étapes (Châssis, Vidéo, Audio, Contrôles, Logiciel).
-*   [specs_materiel.md](specs_materiel.md) : Fiche technique de la borne (type de Hantarex, câblage JAMMA ou autre, adaptateurs vidéo).
-*   [configuration_logiciel.md](configuration_logiciel.md) : Commandes utiles, configuration du signal 15kHz du RPi5, émulateurs.
-*   [liste_achats.md](liste_achats.md) : Liste du matériel nécessaire avec suivi du budget et des commandes.
-*   [liste_jeux.md](liste_jeux.md) : Liste des jeux sélectionnés à installer et configurer.
+Le matériel est déjà là (Pi 5, Recalbox RGB JAMMA 2, alimentation, microSD,
+joysticks et boutons Sanwa, fer à souder et multimètre) : il reste à le
+rassembler, le monter et le régler. C'est un projet personnel, fait pour soi :
+le plaisir, c'est de voir la borne s'allumer étape après étape.
 
----
+## Organisation
 
-## 🚀 Les Grandes Étapes de la Rénovation
+- `docs/` : parcours des missions, carnet de travail, journal de bord, bases et sécurité.
+- `hardware/` : inventaire du matériel, budget et notes de montage.
+- `assets/photos/` : photos de référence et preuves (avant/après).
 
-Pour mener ce projet à bien sans se décourager ou abîmer le matériel d'époque (surtout le moniteur CRT haute tension !), nous te proposons la démarche suivante :
+## Prochaine étape
 
-### Étape 1 : Inventaire et Sécurité (État des Lieux)
-*   **Sécurité CRT** : Identification du modèle d'Hantarex et apprentissage des règles de sécurité (décharge du tube).
-*   **Inventaire** : Vérifier ce qui fonctionne (alimentation d'origine, haut-parleurs, boutons, moniteur).
-*   **Choix du raccordement** : Décider si l'on garde le câblage JAMMA d'origine (via une carte d'interface) ou si l'on refait le câblage à neuf (encodeurs USB).
+Commencer par la **[mission 1 du parcours](docs/parcours.md#mission-1--rassembler-le-matériel)** :
+retrouver le Raspberry Pi 5 dans les cartons et rassembler tout le matériel.
+Elle se fait en **15 minutes**, sans outil et sans risque.
 
-### Étape 2 : L'Écran Cathodique (Le cœur de la borne)
-*   **Signal 15kHz** : C'est le point critique. Les écrans Hantarex attendent un signal vidéo analogique spécifique (15kHz RVB/RGB). Le RPi5 sort du numérique (HDMI).
-*   **Choix de l'interface vidéo** :
-    *   *Option A (Recommandée - Direct JAMMA)* : Utiliser une carte chapeau (HAT) comme le **RGB-Pi JAMMA**, **Pi2JAMMA** ou **JammaPi** pour connecter le Pi directement sur le peigne JAMMA de la borne. Cela gère la vidéo 15kHz et les contrôles.
-    *   *Option B (SCART/Péritel)* : Utiliser un câble RGB-Pi (SCART) vers un adaptateur châssis CRT.
-    *   *Option C (VGA)* : Utiliser un HAT VGA (ex: Gert VGA666) puis un convertisseur VGA vers RGB Hantarex.
-*   **Ajustements physiques** : Réglages des potards du châssis Hantarex (synchro, taille, position, couleurs).
+- [Parcours des missions](docs/parcours.md) : 16 étapes courtes, chacune avec une preuve et une récompense.
+- [Carnet de travail](docs/carnet.md) : cases à cocher, mesures et preuves d'essai.
+- [Sécurité CRT](docs/securite-crt.md) : à lire avant d'ouvrir la borne.
+- [Les bases](docs/les-bases.md) : le vocabulaire et les notions, à consulter au fil des missions.
 
-### Étape 3 : Contrôles et Audio
-*   **Contrôles** : Raccordement des joysticks et boutons (soudure sur le JAMMA ou câblage direct sur encodeur USB type XinMo/Brook, ou GPIO).
-*   **Audio** : Amplification du signal sonore du Pi vers les haut-parleurs mono ou stéréo de la borne.
+## Règles de travail
 
-### Étape 4 : Système et Distribution (Logiciel)
-*   **Système d'exploitation** : Choix de la distribution (Recalbox RGB Dual, Batocera, RGB-Pi OS, Retropie).
-*   **Optimisation des jeux** : Configuration des "Pixel Perfect" résolutions pour que les jeux s'affichent dans leur résolution d'origine (ex: 240p/320x224 pour Neo-Geo).
-
-### Étape 5 : Intégration Finale et Esthétique
-*   **Montage propre** : Fixation du Pi, des alimentations et du câblage dans la borne.
-*   **Finitions** : Bouton d'allumage général, ventilation, éclairage du marquee, nettoyage/restauration esthétique.
+- Une mission à la fois, en séances de 30 à 60 minutes ; on coche « terminé » quand la preuve existe.
+- On ne termine pas une séance sur un blocage : on note la prochaine petite action (10 minutes maximum).
+- Tout ce qui touche au tube cathodique et au châssis se fait **avec le papa**, borne débranchée.
+- Chaque étape importante est ajoutée au [journal de bord](docs/journal.md), avec une photo dans `assets/photos/`.
