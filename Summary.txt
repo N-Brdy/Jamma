@@ -22,17 +22,18 @@ Solution technique retenue
 - Jeux vises : Double Dragon, Shinobi, Flash, Golden Axe, F/A-18, Street
   Fighter II (6 boutons par joueur via un Kick Harness).
 
-Contenu des fichiers
---------------------
+Contenu des dossiers et fichiers
+--------------------------------
 - README.md                 : presentation du projet et grandes etapes.
-- TODO.md                   : taches par phase (securite/electricite, panel,
-                              video JAMMA, controles/audio, finitions).
-- specs_materiel.md         : fiche technique detaillee du materiel present
-                              (CRT, alimentation, monnayeur, panel, cablage).
-- configuration_logiciel.md : choix de l'OS, configuration du signal 15 kHz,
-                              commandes SSH et verifications utiles.
-- liste_achats.md           : materiel a acheter et suivi du budget (~380 EUR).
-- liste_jeux.md             : jeux selectionnes et notes de configuration.
+- docs/parcours.md          : 16 missions pas a pas avec objectifs et recompenses.
+- docs/carnet.md            : suivi de progression, mesures et validations.
+- docs/journal.md           : journal de bord des seances et decisions.
+- docs/les-bases.md         : notions cles et FAQ (CRT, JAMMA, electronique).
+- docs/securite-crt.md      : regles indispensables pour intervenir sans danger.
+- docs/configuration.md     : reglage 15 kHz, Recalbox et astuces logicielles.
+- docs/liste-jeux.md        : jeux selectionnes et jalons de test.
+- hardware/materiel.md      : fiche technique complete, inventaire et budget.
+- hardware/notes-montage.md : cotes, passages de cables et impression 3D.
 
 Points d'attention
 ------------------
