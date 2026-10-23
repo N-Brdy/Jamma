@@ -5,13 +5,18 @@ Ce fichier regroupe toutes les tâches nécessaires à la réalisation de ta bor
 ---
 
 ## 🛡️ Phase 1 : Préparation, Électricité & Sécurité
-- [ ] Inspecter visuellement l'intérieur de la borne (câblage existant, alimentation, peigne JAMMA bleu).
-- [x] Identifier précisément le modèle de la platine Hantarex (confirmé : **Hantarex Polo 25"** grâce aux photos).
+- [x] Inspecter visuellement l'intérieur de la borne (réalisé via l'analyse technique des photos : meuble W Wyss & Fils SA, tube Videocolor, platine Hantarex, alimentation Kiesewetter).
+- [x] Identifier précisément le modèle de la platine Hantarex (confirmé : **Hantarex Polo 25"** grâce aux photos et au tube Videocolor A59ECY13X01).
+- [ ] Nettoyer en profondeur l'intérieur de la caisse (poussière dense et toiles d'araignées importantes, notamment autour du tube cathodique).
+- [ ] Nettoyer la vitre de l'écran (retirer la poussière et les morceaux de ruban adhésif bleu "3" et "S").
+- [ ] Inspecter la structure mécanique pour identifier l'origine du gros boulon métallique retrouvé détaché au fond de la caisse.
 - [ ] Réparer la télécommande de réglages déportée (PCB OC 03) : remplacer la résistance R403 brûlée (1kΩ ou 1.8kΩ selon la révision), tester la diode D401 (BA159) et remplacer le condensateur C401 (1µF / 100V) préventivement.
 - [ ] Vérifier minutieusement le sens et l'alignement du connecteur de la télécommande (J407) avant toute mise sous tension (un décalage de broches peut causer ce type de court-circuit).
 - [ ] Inspecter le transformateur d'isolement (le gros bloc métallique à gauche de l'alimentation) pour s'assurer que l'écran sera alimenté avec la bonne tension et isolé du secteur.
-- [ ] Dépoussiérer la platine principale du moniteur Polo et sa platine de cou (neck board) après avoir déchargé le tube cathodique en toute sécurité.
+- [ ] Vérifier le bon état des deux fusibles en verre sur la platine en bois à côté de l'alimentation.
+- [ ] Brancher/tester l'alimentation Kiesewetter et vérifier la présence des tensions (+5V, +12V, -5V) via les trois voyants LED rouges de diagnostic du boîtier de répartition.
 - [ ] Lire la documentation de sécurité pour savoir comment décharger un tube cathodique en toute sécurité (indispensable si tu dois démonter le châssis ou nettoyer en profondeur).
+- [ ] Dépoussiérer la platine principale du moniteur Polo et sa platine de cou (neck board) après avoir déchargé le tube cathodique en toute sécurité.
 
 ## 📐 Phase 2 : Conception & Fabrication du Panel sous Fusion 360 (Spécial Street Fighter)
 - [ ] Concevoir le panel complet en 3D sur **Fusion 360** :

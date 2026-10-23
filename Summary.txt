@@ -1,0 +1,51 @@
+RESUME DU PROJET JAMMA
+======================
+
+But du depot
+------------
+Ce depot n'est pas un projet de code : c'est le dossier de suivi de la
+restauration d'une borne d'arcade vintage (meuble W Wyss & Fils SA, Suisse)
+equipee d'un ecran CRT Hantarex Polo 25" (tube Videocolor A59ECY13X01) et
+d'une alimentation Kiesewetter. L'objectif est de la faire fonctionner a
+nouveau avec un Raspberry Pi 5 et Recalbox, en conservant l'ecran et le
+cablage d'origine.
+
+Solution technique retenue
+---------------------------
+- Raspberry Pi 5 + carte Recalbox RGB JAMMA 2, branchee directement sur le
+  peigne JAMMA bleu de la borne (video analogique 15 kHz "pixel perfect",
+  audio amplifie et controles via le JAMMA).
+- Systeme : Recalbox (support natif du Pi 5 et du HAT RGB JAMMA 2).
+- Panel refait sur mesure : 2 joysticks Sanwa JLF + 6 boutons par joueur
+  (12 boutons OBSF-30 + 4 OBSF-24), plaque decoupee au laser (DXF depuis
+  Fusion 360) et supports imprimes en 3D (Prusa Core One).
+- Jeux vises : Double Dragon, Shinobi, Flash, Golden Axe, F/A-18, Street
+  Fighter II (6 boutons par joueur via un Kick Harness).
+
+Contenu des fichiers
+--------------------
+- README.md                 : presentation du projet et grandes etapes.
+- TODO.md                   : taches par phase (securite/electricite, panel,
+                              video JAMMA, controles/audio, finitions).
+- specs_materiel.md         : fiche technique detaillee du materiel present
+                              (CRT, alimentation, monnayeur, panel, cablage).
+- configuration_logiciel.md : choix de l'OS, configuration du signal 15 kHz,
+                              commandes SSH et verifications utiles.
+- liste_achats.md           : materiel a acheter et suivi du budget (~380 EUR).
+- liste_jeux.md             : jeux selectionnes et notes de configuration.
+
+Points d'attention
+------------------
+- Securite CRT : decharge du tube obligatoire avant toute intervention ;
+  le chassis doit etre alimente en 230V via le transformateur d'isolement.
+- La telecommande de reglages (PCB OC 03) est endommagee : resistance R403
+  brulee, diode D401 et condensateur C401 a tester/remplacer.
+- Ne jamais envoyer un signal HDMI/31 kHz au moniteur : uniquement du
+  15,625 kHz (240p/480i), sinon risque de degradation du chassis.
+- Le monnayeur et l'alimentation d'origine sont a tester avant remontage.
+
+Etat actuel
+-----------
+Phase 1 (inventaire et securite) partiellement faite : identification du
+materiel terminee. Nettoyage, reparations electroniques, achat du materiel
+et fabrication du panel restent a realiser.

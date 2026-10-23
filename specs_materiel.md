@@ -9,6 +9,8 @@ Ce document sert à répertorier tout le matériel physique présent dans la bor
 L'écran d'une vraie borne d'arcade est un élément précieux mais délicat.
 
 *   **Modèle du Châssis (Platine électronique)** : **Hantarex Polo 25"** (15kHz) - *Confirmé par les photos (platine de cou et télécommande OC 03)*.
+    *   *Constructeur du Châssis* : HANTAREX (Florence, Italie - Via P. Ricasoli 76/78). La platine électronique est fixée verticalement sur le côté droit intérieur de la borne. La tétine THT (câble rouge) est connectée à l'anode du tube.
+    *   *Tube Cathodique* : Tube Videocolor de référence **A59ECY13X01** (diagonale d'environ 59 cm / 25 pouces). Numéro de série/lot : **I105583**.
     *   *État visuel* : La platine principale et la platine de cou (neck board) sont très poussiéreuses mais semblent physiquement intactes. En revanche, **la télécommande de réglages déportée (PCB OC 03) présente une résistance R403 complètement brûlée/carbonisée** juste sous la diode D401.
     *   *Composants à vérifier/remplacer sur cette télécommande* :
         *   **R403** (Résistance) : Complètement brûlée, valeur d'origine de **1kΩ** (ou **1.8kΩ** selon la révision du châssis, à remplacer par une résistance de même valeur, de préférence à couche métallique 0.5W ou 1W).
@@ -22,12 +24,34 @@ L'écran d'une vraie borne d'arcade est un élément précieux mais délicat.
 
 ## ⚡ Alimentation Générale
 
-*   **Alimentation Arcade d'origine** : (ex: Hantarex US250, alimentation à découpage d'origine)
-    *   Sert à alimenter le peigne JAMMA en +5V et +12V.
+*   **Alimentation Arcade d'origine** : **Kiesewetter** (bloc d'alimentation à découpage métallique).
+    *   *Borniers identifiés* : `AC1`, `AC2` (Entrée secteur), `FG` (Terre), `+12V`, `-12V`, `-5V`, `G` (Masse/GND), `+5V`, `+5V`, et `ADJ` (potentiomètre d'ajustement fin de la tension +5V).
+    *   *Fusibles de sécurité* : Deux fusibles en verre montés sur une petite platine en bois à côté du bloc d'alimentation.
 *   **Alimentation du Raspberry Pi 5** :
     *   Alimentation USB-C officielle RPi 27W (5V / 5A), ou via la carte d'interface JAMMA si celle-ci gère l'alimentation du Pi à partir du +5V/+12V de la borne (avec un ampérage suffisant).
 
 ---
+
+## 📦 Cabinet, Monnayeur & Boîtier de Répartition
+
+*   **Identification du Meuble (Cabinet)** :
+    *   *Constructeur / Exploitant* : **W WYSS & FILS SA** (Suisse), logo visible sur le marquee.
+    *   *Esthétique* : Panneau inférieur imitant le bois ou le granit sombre.
+    *   *Vitre d'écran* : Très empoussiérée avec des morceaux de ruban adhésif bleu (portant les inscriptions "3" et "S").
+*   **Boîtier de Répartition (Platine métallique centrale)** :
+    *   Sert de point de jonction avec indications en français :
+        *   `DEMAGN.` (Démagnétisation / Degauss)
+        *   `SON et HP` (Audio / Haut-parleurs)
+        *   `PUPITRE` (Commandes joueurs)
+        *   `ALIMENTATION`
+        *   `RVB` (Signal vidéo vers le moniteur)
+        *   `MONNAYEUR`
+    *   *Indicateurs de Diagnostic* : Équipé de **trois voyants LED rouges** de diagnostic indiquant la présence des tensions **+5V**, **+12V** et **-5V**.
+*   **Monnayeur (Coin Door)** :
+    *   *Façade* : Porte métallique à trois fentes d'insertion de pièces.
+    *   *Porte intérieure* : Numéro de série/identification **131610** inscrit au marqueur orange. Serrure à came batteuse en place.
+    *   *Composant détaché* : Un gros boulon métallique a été trouvé au fond de la caisse, suggérant une pièce desserrée ou démontée lors de précédentes interventions.
+
 
 ## 🕹️ Contrôles (Panel)
 

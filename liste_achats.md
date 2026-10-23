@@ -56,10 +56,18 @@ Ce fichier permet de suivre les composants achetés, à acheter ou en cours de l
     *   *Statut* : `[x] En stock`
 
 ### 4. Alimentation & Sécurité
-- [ ] **Transformateur d'isolement 128V AC / 220V AC** (Intégré dans la borne d'origine)
+- [ ] **Transformateur d'isolement** (Intégré dans la borne d'origine)
     *   *Prix estimé* : 0 € (déjà présent)
-    *   *Statut* : `[ ] À tester / inspecter`
+    *   *Statut* : `[ ] À inspecter visuellement / tester`
+- [ ] **Alimentation à découpage d'origine (Kiesewetter)**
+    *   *Prix estimé* : 0 € (déjà présente)
+    *   *Statut* : `[ ] À tester (vérification des tensions +5V, +12V, -5V via les LEDs de diagnostic)`
+- [ ] **Fusibles de rechange (en verre)**
+    *   *Prix estimé* : ~5 €
+    *   *Note* : Prévoir au cas où les deux fusibles d'origine sur la platine en bois seraient HS ou de mauvaise valeur.
+    *   *Statut* : `[ ] À commander si nécessaire après test`
 - [ ] **Câblage complémentaire pour boutons 5 & 6 (Kick Harness)**
     *   *Note* : À relier au bornier ou connecteur spécifique du Recalbox RGB JAMMA 2.
     *   *Statut* : `[ ] À commander`
+
 
